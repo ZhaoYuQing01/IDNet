@@ -7,13 +7,8 @@ This an official Pytorch implementation of our paper "IDNet". The specific detai
 * MUUFL Dataset: The dataset obtained HSI and LiDAR data from the University of Southern Mississippi, Gulfport Campus in Long Beach, Mississippi, USA, with a size of $325 \times 220$ pixels. HSI has 64 available spectral channels ranging from 0.38 to 1.05 $\mu$m with a spatial resolution of $0.54 \times 1.0 m$. LiDAR data is captured by an ALTM sensor using a laser at a wavelength of 1064 nm. The spatial resolution is $0.60 \times 0.78 m$. The dataset contains a total of 53,687 truth samples, and 11 distinguishable class labels are studied.
 * Augsburg Data: The dataset captures the RS scenario for the city of Augsburg. The HSI data includes 180 spectral bands in the 400-2500 nm wavelength range. The LiDAR data consists of $332 \times 485$ pixels and depicts seven unique land cover categories.
 # Train FDNet
- \“`python
-   Your Python code here
-   \“`
  ```
-function test() {
-  console.log("This code will have a copy button to the right of it");
-}
+python demo.py
 ```
 # Results
 All the results presented here are referenced from the original paper.
@@ -24,4 +19,15 @@ All the results presented here are referenced from the original paper.
 | MUUFL | 89.12 | 89.36 | 85.78 |
 | Augsburg | 88.74 | 78.61 | 84.33 |
 # Citation
+```
+@ARTICLE{,
+  author={},
+  journal={},
+  title={},
+  year={},
+  volume={},
+  pages={},
+  doi={}
+}
+```
 # Contact
