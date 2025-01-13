@@ -17,27 +17,27 @@ def load_dataset(args):
     assert args.dataset_name.lower() in ["augsburg", "muufl", "houston", "trento", "yancheng"]
     # augsburg
     if args.dataset_name.lower() == "augsburg":
-        hsi_data = sio.loadmat('.cache/IDNet/data/augsburg/data_HS_LR.mat')['data_HS_LR']
-        lidar_data = sio.loadmat('.cache/IDNet/data/augsburg/data_DSM.mat')['data_DSM']
-        labels_train = sio.loadmat('.cache/IDNet/data/augsburg/train_test_gt.mat')['train_data']
-        labels_test = sio.loadmat('.cache/IDNet/data/augsburg/train_test_gt.mat')['test_data']
+        hsi_data = sio.loadmat('data/augsburg/data_HS_LR.mat')['data_HS_LR']
+        lidar_data = sio.loadmat('data/augsburg/data_DSM.mat')['data_DSM']
+        labels_train = sio.loadmat('data/augsburg/train_test_gt.mat')['train_data']
+        labels_test = sio.loadmat('data/augsburg/train_test_gt.mat')['test_data']
         labels = labels_test + labels_train
     elif args.dataset_name.lower() == "muufl":
-        data = sio.loadmat('.cache/IDNet/data/muufl/muufl.mat')
+        data = sio.loadmat('data/muufl/muufl.mat')
         hsi_data = data["hsi"]
-        lidar_data = data['lidar_1'][..., 0]  # todo 2->1
+        lidar_data = data['lidar_1'][..., 0]
         labels = data['gt']
         labels[labels==-1] = 0
     elif args.dataset_name.lower() == "houston":
-        hsi_data = sio.loadmat('.cache/IDNet/data/houston/Houston.mat')['HSI']
-        lidar_data = sio.loadmat('.cache/IDNet/data/houston/LiDAR.mat')['LiDAR']
-        labels_train =  sio.loadmat('.cache/IDNet/data/houston/train_test_gt.mat')['train_data']
-        labels_test = sio.loadmat('.cache/IDNet/data/houston/train_test_gt.mat')['test_data']
+        hsi_data = sio.loadmat('data/houston/Houston.mat')['HSI']
+        lidar_data = sio.loadmat('data/houston/LiDAR.mat')['LiDAR']
+        labels_train =  sio.loadmat('data/houston/train_test_gt.mat')['train_data']
+        labels_test = sio.loadmat('data/houston/train_test_gt.mat')['test_data']
         labels = labels_test + labels_train
     elif args.dataset_name.lower() == "trento":
-        hsi_data = sio.loadmat('.cache/IDNet/data/trento/HSI_Trento.mat')['hsi_trento']
-        lidar_data = sio.loadmat('.cache/IDNet/data/trento/Lidar1_Trento.mat')['lidar1_trento']
-        labels = sio.loadmat('.cache/IDNet/data/trento/GT_Trento.mat')['gt_trento']
+        hsi_data = sio.loadmat('data/trento/HSI_Trento.mat')['hsi_trento']
+        lidar_data = sio.loadmat('data/trento/Lidar1_Trento.mat')['lidar1_trento']
+        labels = sio.loadmat('data/trento/GT_Trento.mat')['gt_trento']
     
     pass
     return hsi_data, lidar_data, labels
