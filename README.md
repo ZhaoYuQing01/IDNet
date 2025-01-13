@@ -10,6 +10,11 @@ This an official Pytorch implementation of our paper "IDNet". The specific detai
  \“`python
    Your Python code here
    \“`
+ ```
+function test() {
+  console.log("This code will have a copy button to the right of it");
+}
+```
 # Results
 All the results presented here are referenced from the original paper.
 | Dataset | OA(%) | AA(%) | AA(%) |
