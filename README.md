@@ -9,15 +9,11 @@ This an official Pytorch implementation of our paper "IDNet". The specific detai
 # Train FDNet
 # Results
 All the results presented here are referenced from the original paper.
-| 列1 | 列2 | 列3 |
-| :---: | :---: | :---: |
-| 数据1 | 数据2 | 数据3 |
-
-| 列1 | 列2 | 列3 |
-| --- | --- | --- |
-| 数据1 | 数据2 | 数据3 |
-| 数据4 | 数据5 | 数据6 |
-| 数据1 | 数据2 | 数据3 |
-| 数据4 | 数据5 | 数据6 |
+| Dataset | OA(%) | AA(%) | AA(%) |
+| --- | --- | --- | --- |
+| Houston2013 | 96.74 | 97.25 | 96.47 |
+| Trento | 99.62 | 99.37 | 99.49 |
+| MUUFL | 89.12 | 89.36 | 85.78 |
+| Augsburg | 88.74 | 78.61 | 84.33 |
 # Citation
 # Contact
