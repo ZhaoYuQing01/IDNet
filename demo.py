@@ -286,7 +286,7 @@ def main():
 
         elif loss.item() < best_loss[2]:
             best_loss[2] = loss.item()
-    #model.save('my_model.pkl')
+    torch.save(model.state_dict(), f"{args.work_dirs}/_best_model.pkl")
     
     args.logger.info("Finished Training")
     toc1 = time.perf_counter()
