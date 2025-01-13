@@ -8,5 +8,9 @@ This an official Pytorch implementation of our paper "IDNet". The specific detai
 * Augsburg Data: The dataset captures the RS scenario for the city of Augsburg. The HSI data includes 180 spectral bands in the 400-2500 nm wavelength range. The LiDAR data consists of $332 \times 485$ pixels and depicts seven unique land cover categories.
 # Train FDNet
 # Results
+All the results presented here are referenced from the original paper.
+| 列1 | 列2 | 列3 |
+| :---: | :---: | :---: |
+| 数据1 | 数据2 | 数据3 |
 # Citation
 # Contact
