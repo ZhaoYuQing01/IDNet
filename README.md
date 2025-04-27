@@ -1,5 +1,5 @@
 # IDNet
-This an official Pytorch implementation of our paper "IDNet". The specific details of the framework are as follows.
+This an official Pytorch implementation of our paper "IDNet: Intensity-Constrained Detail-Enhanced Network for Hyperspectral and LiDAR Collaborative Classification". The specific details of the framework are as follows.
 ![image](https://github.com/ZhaoYuQing01/IDNet/blob/main/figure/IDNet.png)
 # Datasets
 * [The Houston2013 dataset](https://hyperspectral.ee.uh.edu/?page_id=459) includes a hyperspectral image (HSI) and a LiDAR-based digital surface model (DSM), collected by the National Center for Airborne Laser Mapping (NCALM) using the ITRES CASI-1500 sensor over the University of Houston campus in June 2012. The HSI comprise 144 spectral bands covering a wavelength range from 0.38 to 1.05 µm while LiDAR data are provided for a single band. Both the HSI and LiDAR data share dimensions of 349 × 1905 pixels with a spatial resolution of 2.5 m. The dataset contains 15 categories, with a total of 15,029 real samples available.
